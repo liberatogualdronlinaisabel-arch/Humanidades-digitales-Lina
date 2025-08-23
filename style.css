@@ -1,0 +1,99 @@
+.circle {
+  width: 100px; 
+  height: 100px; 
+  background-color: lightblue; 
+  border-radius: 50%;
+  position: relative;
+  top: 200px;
+  left: 100px;
+  animation-name: color-distinto;
+  animation-duration: 5s;
+  animation-iteration-count:infinite;
+}
+.circle-dos{
+  width: 100px; 
+  height: 100px; 
+  background-color: red; 
+  border-radius: 50%;
+  position: relative;
+  top: 200px;
+  left: 200px;
+  animation-name: cambio-color;
+  animation-duration: 5s;
+  animation-iteration-count:infinite;
+}
+
+@keyframes cambio-color {
+  0%{
+    background-color: red;
+    top: 200px;
+    left: 200px;
+    width: 100px; 
+    height: 100px;
+  }
+  25% {
+    background-color: pink;
+    top: 50px;
+    left: 200px;
+    width: 50px; 
+    height: 100px;
+  }
+  50% {
+    background-color: green;
+    top: 50px;
+    left: 0px;
+    width: 100px; 
+    height: 100px;
+  }
+  75% {
+    background-color: purple;
+    top: 0px;
+    left: 0px;
+    width: 50px; 
+    height: 100px;
+  }
+  100% {
+    background-color: brown;
+    top: 150px;
+    left: 180px;
+    width: 80px; 
+    height: 80px;
+  }
+}
+@keyframes color-distinto {
+  0%{
+    background-color: lightblue;
+    top: 500px;
+    left: 500px;
+    width: 100px; 
+    height: 100px;
+  }
+  25% {
+    background-color: yellow;
+    top: 80px;
+    left: 1000px;
+    width: 60px; 
+    height: 100px;
+  }
+  50% {
+    background-color: pink;
+    top: 90px;
+    left: 200px;
+    width: 70px; 
+    height: 200px;
+  }
+  75% {
+    background-color: blue;
+    top: 110px;
+    left: 40px;
+    width: 90px; 
+    height: 150px;
+  }
+  100% {
+    background-color: brown;
+    top: 150px;
+    left: 180px;
+    width: 80px; 
+    height: 80px;
+  }
+}
